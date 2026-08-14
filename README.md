@@ -316,14 +316,14 @@ http://127.0.0.1:8000/docs
 
 The system supports short audio transcription using OpenAI Whisper with automatic language detection and timestamped output.
 
-<img width="800" alt="short audio processing" src="https://github.com/user-attachments/assets/cd4d6f86-2e42-4ca5-a94d-6175736924e6" />
+<img width="1003" height="208" alt="Image" src="https://github.com/user-attachments/assets/eba488aa-88dc-43bc-a16b-a326c32802cb" />
 
 
 ### 🎧 Long Audio Processing
 
 Long audio files are divided into smaller chunks, processed independently, and then merged using adjusted timestamps to reconstruct the complete conversation.
 
-<img width="800" alt="long audio processing" src="https://github.com/user-attachments/assets/c80e1b3a-b753-46f3-9a8b-1a655849241a" />
+![Long Audio Processing](https://github.com/user-attachments/assets/c80e1b3a-b753-46f3-9a8b-1a655849241a)
 
 ### 🔥 Firebase Authentication
 
