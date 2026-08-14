@@ -65,7 +65,7 @@ The pipeline is designed as a sequence of processing stages where the output of 
 
 ---
 
-Key Capabilities
+**Key Capabilities**
 
 1. Speech Transcription
 
@@ -102,9 +102,9 @@ A browser-based interface provides audio upload and visualization of the generat
 
 ---
 
-Technology Stack
+**Technology Stack**
 
-Category	  --      Technologies
+**Category	  --      Technologies**
 
 Programming Language -	Python
 Backend Framework - FastAPI
@@ -122,7 +122,7 @@ Development Tools -	VS Code, Jupyter Notebook, Google Colab
 
 ---
 
-End-to-End Processing Workflow
+**End-to-End Processing Workflow**
 
 1. Audio Upload
       |
@@ -151,7 +151,7 @@ End-to-End Processing Workflow
 
 ---
 
-Evaluation
+**Evaluation**
 
 The speech transcription component was evaluated against human reference transcripts across multiple scenarios.
 
@@ -169,8 +169,8 @@ The results demonstrate strong transcription performance across English, multili
 
 
 ---
-
-Engineering Challenges
+**
+**Engineering Challenges
 
 Audio Standardization
 
@@ -245,7 +245,7 @@ Example response structure:
 
 ---
 
-Project Structure
+**Project Structure**
 
 tanglint-speech-to-insight/
 |
@@ -272,7 +272,7 @@ tanglint-speech-to-insight/
 
 ---
 
-Running the Project
+**Running the Project**
 
 1. Clone the repository
 
@@ -310,29 +310,55 @@ http://127.0.0.1:8000/docs
 
 ---
 
-Screenshots
+## 📸 Screenshots
 
-Application Dashboard
+### 🎙️ Short Audio Transcription
 
+The system supports short audio transcription using OpenAI Whisper with automatic language detection and timestamped output.
 
-
-Speech Transcription
-
-
-
-Generated Insights
+<img width="1003" height="208" alt="image" src="https://github.com/user-attachments/assets/cd4d6f86-2e42-4ca5-a94d-6175736924e6" />
 
 
+### 🎧 Long Audio Processing
 
-FastAPI Documentation
+Long audio files are divided into smaller chunks, processed independently, and then merged using adjusted timestamps to reconstruct the complete conversation.
+
+<img width="1219" height="711" alt="image" src="https://github.com/user-attachments/assets/c80e1b3a-b753-46f3-9a8b-1a655849241a" />
+
+### 🔥 Firebase Authentication
+
+Firebase Authentication is integrated for user authentication and account management.
+
+<img width="1360" height="604" alt="image" src="https://github.com/user-attachments/assets/c15f1ca0-df83-45ce-b33c-4fa1e6051d3c" />
+
+
+### 🖥️ AI Speech-to-Insight Web Interface
+
+The web interface displays timestamped speaker-wise transcription, translation, emotion information, summary, and automatically generated tasks.
+
+<img width="1352" height="608" alt="image" src="https://github.com/user-attachments/assets/c7636403-43b3-4c69-949d-632a6242e8c2" />
+
+
+### 📝 Conversation Export
+
+The processed conversation can be downloaded as a text file for further reference.
+
+<img width="1350" height="245" alt="image" src="https://github.com/user-attachments/assets/91d45383-722f-49ce-a3fa-dcbb4ac06b4e" />
+
+### ✅ Automatic To-Do List
+
+The system extracts actionable tasks from the conversation and displays them with priority, responsible person, and deadline information.
+
+<img width="1184" height="719" alt="image" src="https://github.com/user-attachments/assets/5f272801-f9ae-4398-b9d3-3076639d61ef" />
+
 
 
 
 
 ---
 
-Engineering Takeaways
-
+**Engineering Takeaways
+**
 This project provided practical experience in:
 
 Designing end-to-end AI processing pipelines
@@ -355,27 +381,10 @@ Identifying system limitations through testing
 
 
 
----
-
-Limitations
-
-The current implementation has several areas that can be improved:
-
-Speaker attribution can become less reliable with overlapping speech.
-
-Noisy recordings can reduce transcription accuracy.
-
-Emotion recognition performance can vary with audio quality and speaking style.
-
-Large recordings require greater computational resources.
-
-Some AI components require external model credentials or services.
-
-
 
 ---
 
-Future Improvements
+**Future Improvements**
 
 Potential future improvements include:
 
@@ -406,8 +415,6 @@ Vellore Institute of Technology
 
 Vellore, Tamil Nadu, India
 
-GitHub
-LinkedIn
 
 
 ---
