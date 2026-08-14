@@ -316,40 +316,40 @@ http://127.0.0.1:8000/docs
 
 The system supports short audio transcription using OpenAI Whisper with automatic language detection and timestamped output.
 
-<img width="1003" height="208" alt="image" src="https://github.com/user-attachments/assets/cd4d6f86-2e42-4ca5-a94d-6175736924e6" />
+<img width="800" alt="short audio processing" src="https://github.com/user-attachments/assets/cd4d6f86-2e42-4ca5-a94d-6175736924e6" />
 
 
 ### 🎧 Long Audio Processing
 
 Long audio files are divided into smaller chunks, processed independently, and then merged using adjusted timestamps to reconstruct the complete conversation.
 
-<img width="1219" height="711" alt="image" src="https://github.com/user-attachments/assets/c80e1b3a-b753-46f3-9a8b-1a655849241a" />
+<img width="800" alt="long audio processing" src="https://github.com/user-attachments/assets/c80e1b3a-b753-46f3-9a8b-1a655849241a" />
 
 ### 🔥 Firebase Authentication
 
 Firebase Authentication is integrated for user authentication and account management.
 
-<img width="1360" height="604" alt="image" src="https://github.com/user-attachments/assets/c15f1ca0-df83-45ce-b33c-4fa1e6051d3c" />
+<img width="800" alt="firebase" src="https://github.com/user-attachments/assets/c15f1ca0-df83-45ce-b33c-4fa1e6051d3c" />
 
 
 ### 🖥️ AI Speech-to-Insight Web Interface
 
 The web interface displays timestamped speaker-wise transcription, translation, emotion information, summary, and automatically generated tasks.
 
-<img width="1352" height="608" alt="image" src="https://github.com/user-attachments/assets/c7636403-43b3-4c69-949d-632a6242e8c2" />
+<img width="800" alt="web interface" src="https://github.com/user-attachments/assets/c7636403-43b3-4c69-949d-632a6242e8c2" />
 
 
 ### 📝 Conversation Export
 
 The processed conversation can be downloaded as a text file for further reference.
 
-<img width="1350" height="245" alt="image" src="https://github.com/user-attachments/assets/91d45383-722f-49ce-a3fa-dcbb4ac06b4e" />
+<img width="800" alt="conversation export" src="https://github.com/user-attachments/assets/91d45383-722f-49ce-a3fa-dcbb4ac06b4e" />
 
 ### ✅ Automatic To-Do List
 
 The system extracts actionable tasks from the conversation and displays them with priority, responsible person, and deadline information.
 
-<img width="1184" height="719" alt="image" src="https://github.com/user-attachments/assets/5f272801-f9ae-4398-b9d3-3076639d61ef" />
+<img width="800" alt="todo list" src="https://github.com/user-attachments/assets/5f272801-f9ae-4398-b9d3-3076639d61ef" />
 
 
 
