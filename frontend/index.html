@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TANGLINT | AI Speech-to-Insight</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <div class="brand">
+            <span class="brand-name">TANGLINT</span>
+            <span class="brand-subtitle">AI Speech Intelligence</span>
+        </div>
+
+        <a
+            class="api-link"
+            href="http://127.0.0.1:8000/docs"
+            target="_blank"
+        >
+            API Documentation
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                AI-POWERED SPEECH ANALYSIS
+            </p>
+
+            <h1>
+                Transform conversations<br>
+                into actionable insights.
+            </h1>
+
+            <p class="hero-description">
+                TANGLINT processes conversational audio using
+                speech recognition, speaker diarization,
+                emotion recognition and natural language
+                processing to produce structured insights.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- UPLOAD -->
+
+    <section class="workspace">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-label">01 / INPUT</p>
+                <h2>Upload conversation</h2>
+            </div>
+
+            <span class="status" id="status">
+                Ready
+            </span>
+
+        </div>
+
+
+        <div
+            class="upload-area"
+            id="uploadArea"
+        >
+
+            <input
+                type="file"
+                id="audioFile"
+                accept="audio/*"
+                hidden
+            >
+
+            <div class="upload-icon">
+                +
+            </div>
+
+            <h3>
+                Drop an audio file here
+            </h3>
+
+            <p>
+                or click to browse
+            </p>
+
+            <span class="file-info">
+                Supported audio files
+            </span>
+
+        </div>
+
+
+        <div
+            class="selected-file"
+            id="selectedFile"
+        ></div>
+
+
+        <button
+            class="primary-button"
+            id="processButton"
+            disabled
+        >
+            Process Audio
+        </button>
+
+    </section>
+
+
+    <!-- RESULTS -->
+
+    <section
+        class="results"
+        id="results"
+    >
+
+        <!-- LANGUAGE -->
+
+        <div class="result-card">
+
+            <div class="result-header">
+
+                <div>
+                    <p class="section-label">
+                        02 / LANGUAGE
+                    </p>
+
+                    <h2>
+                        Detected Language
+                    </h2>
+                </div>
+
+                <span
+                    class="result-value"
+                    id="language"
+                >
+                    —
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- TRANSCRIPT -->
+
+        <div class="result-card">
+
+            <p class="section-label">
+                03 / TRANSCRIPTION
+            </p>
+
+            <h2>
+                Conversation Transcript
+            </h2>
+
+            <div
+                class="transcript"
+                id="transcript"
+            >
+                Processing results will appear here.
+            </div>
+
+        </div>
+
+
+        <!-- TRANSLATION -->
+
+        <div class="result-card">
+
+            <p class="section-label">
+                04 / TRANSLATION
+            </p>
+
+            <h2>
+                Translated Conversation
+            </h2>
+
+            <div
+                class="text-output"
+                id="translation"
+            >
+                —
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY -->
+
+        <div class="result-card">
+
+            <p class="section-label">
+                05 / SUMMARY
+            </p>
+
+            <h2>
+                AI-Generated Summary
+            </h2>
+
+            <div
+                class="text-output"
+                id="summary"
+            >
+                —
+            </div>
+
+        </div>
+
+
+        <!-- TASKS -->
+
+        <div class="result-card">
+
+            <p class="section-label">
+                06 / ACTIONABLE INSIGHTS
+            </p>
+
+            <h2>
+                Extracted Tasks
+            </h2>
+
+            <div
+                class="tasks"
+                id="tasks"
+            >
+                —
+            </div>
+
+        </div>
+
+
+        <!-- DOWNLOAD -->
+
+        <div class="download-section">
+
+            <button
+                class="secondary-button"
+                id="downloadButton"
+                disabled
+            >
+                Download Conversation
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PIPELINE -->
+
+    <section class="pipeline-section">
+
+        <p class="section-label">
+            ENGINEERING PIPELINE
+        </p>
+
+        <h2>
+            From raw audio to structured insight
+        </h2>
+
+
+        <div class="pipeline">
+
+            <div class="pipeline-step">
+                <span>01</span>
+                <strong>Audio</strong>
+                <small>Input</small>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <span>02</span>
+                <strong>Whisper</strong>
+                <small>Transcription</small>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <span>03</span>
+                <strong>Pyannote</strong>
+                <small>Speakers</small>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <span>04</span>
+                <strong>SpeechBrain</strong>
+                <small>Emotion</small>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <span>05</span>
+                <strong>NLP</strong>
+                <small>Insights</small>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            TANGLINT — AI Speech-to-Insight Platform
+        </p>
+
+        <p>
+            Built with Python, FastAPI and AI-based speech processing.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+              </html>
